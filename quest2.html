@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1><label>1</label></h1>
+    </div>
+    <div style="display: flex">
+      <input type="button" value="up" onclick="onClickUp()" />
+      <input type="button" value="down" onclick="onClickDown()" />
+    </div>
+    <script>
+      function onClickUp() {
+        console.log("업버튼");
+        const val = document.querySelector("label");
+        console.log(val);
+        console.log(val.innerHTML);
+
+        let before = parseInt(val.innerHTML);
+        val.innerHTML = before + 1;
+
+        // console.log(parseInt(3));
+      }
+
+      function onClickDown() {
+        console.log("다운 버튼");
+      }
+      // 요구사항
+      // 1. up 버튼 클릭시 숫자가 1 증가한다
+      // 2. down 버튼 클릭시 숫자가 1 감소한다
+
+      // 키워드
+      //     onclick,
+      //     document,
+      //     querySelector,
+      //     getElementById,
+      //     innerhtml
+    </script>
+  </body>
+</html>
